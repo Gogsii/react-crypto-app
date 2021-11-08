@@ -41,7 +41,7 @@ const App = () => {
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
               Copyright © 2021   
             <Link to="/">
-              {' '} Dragutinov.
+              {' '}
             </Link> <br />
               All Rights Reserved.
           </Typography.Title>
