@@ -32,7 +32,6 @@ const Exchanges = () => {
                 showArrow={false}
                 key={exchange.id}
                 header={`${exchange.name} ${millify(exchange.volume)} ${millify(exchange.numberOfMarkets)}`}
-
               >
                 {HTMLReactParser(`${exchange.description}`)}
               </Panel>

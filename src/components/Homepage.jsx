@@ -6,7 +6,6 @@ import { useGetCryptosQuery } from '../services/cryptoApi';
 import { Cryptocurrencies, News } from '.';
 import Loader from './Loader';
 
-
 const { Title } = Typography;
 
 const Homepage = () => {
