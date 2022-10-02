@@ -1,10 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import dotenv from "dotenv/dotenv";
+
+import {} from 'dotenv/config';
 
 const cryptoApiHeaders = {
-  "x-rapidapi-host": process.env.X_RAPID_API_HOST,
-  "x-rapidapi-key": process.env.X_RAPID_API_KEY,
-  "x-access-token": process.env.X_RAPID_API_TOKEN,
+  "x-rapidapi-key": process.env.REACT_APP_X_RAPID_API_KEY,
+  "x-rapidapi-host": process.env.REACT_APP_X_RAPID_API_HOST,
 };
 
 const baseUrl = "https://coinranking1.p.rapidapi.com";
