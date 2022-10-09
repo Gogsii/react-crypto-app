@@ -15,7 +15,7 @@ const App = () => {
       </div>
 
       <div className='main'>
-        <Layout>
+        <Layout className="layout-padding">
           <div className='routes'>
             <Switch>
               <Route exact path='/'>
@@ -39,7 +39,7 @@ const App = () => {
 
       <div className='footer'>
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
-              Copyright © 2021   
+              Copyright © 2022 - Gogsi   
             <Link to="/">
               {' '}
             </Link> <br />

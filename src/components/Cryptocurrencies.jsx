@@ -30,12 +30,13 @@ const Cryptocurrencies = ({ simplified }) => {
       )}
  
       <Row gutter={ [30, 30] } className='crypto-card-container'>
+        {console.log(cryptos)}
         {cryptos?.map((coin) => (
-           <Col xs={24} sm={12} lg={6} className='crypto-card' key={coin.id}>
-             <Link to={`/crypto/${coin.id}`}>
+           <Col xs={24} sm={12} lg={6} className='crypto-card' key={coin.uuid}>
+             <Link to={`/crypto/${coin.uuid}`} key={coin.uuid}>
                <Card 
                   title={`${coin.rank}. ${coin.name}`}
-                  extra={<img className='crypto-image' src={coin.iconUrl} />}
+                  extra={<img className='crypto-image' src={coin.iconUrl} alt={coin.name}/>}
                   hoverable
                 >
                 <p>Price: {millify(coin.price)}</p>

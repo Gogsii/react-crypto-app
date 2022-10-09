@@ -17,7 +17,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Title level={2} className='heading'>Global Crypto Stats</Title>
+      <Title level={2} className='heading'>See what’s going on in the world of crypto</Title>
 
       <Row>
         <Col span={12}><Statistic title='Total Crypto Currencies' value={globalStats.total}/></Col>
