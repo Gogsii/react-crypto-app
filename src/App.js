@@ -15,7 +15,7 @@ const App = () => {
       </div>
 
       <div className='main'>
-        <Layout className="layout-padding">
+        <Layout className="layout-padding mobile-bg">
           <div className='routes'>
             <Switch>
               <Route exact path='/'>

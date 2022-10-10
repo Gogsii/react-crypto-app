@@ -1,3 +1,4 @@
+/* SITEWIDE */
 :root {
   --text-primary: #000;
   --bgPrimary: #fff;
@@ -20,20 +21,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*=============================================*/
+/* UTILITIES */
 .remove-bottom-margin {
-  margin-bottom: 0px!important;
+  margin-bottom: 0px !important;
 }
-
+.loader {
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*=============================================*/
+/* LINKS */
 a:hover {
   color: var(--pink) !important;
 }
-
 .app {
   display: flex;
   overflow: hidden;
 }
-
+/*=============================================*/
+/* NAVIGATION */
 .navbar {
   flex: 0.25;
   background: var(--crypto-bg);
@@ -62,55 +71,54 @@ a:hover {
 }
 .menu-control-container {
   display: none !important;
+  right: 10x !important;
   position: absolute !important;
-  right: 10px !important;
   top: 25px !important;
   font-size: 1.2rem !important;
-  background: transparent!important;
-  color: white!important;
+  background: transparent !important;
+  color: white !important;
   border: none !important;
-  padding: 30px;
 }
 .ant-menu-bg {
-  background: transparent!important;
-  color: #fff!important;
-  border: none!important;
+  background: transparent !important;
+  color: #fff !important;
+  border: none !important;
 }
 .ant-menu a {
-  color: #fff!important;
+  color: #fff !important;
 }
+/*=============================================*/
+/* LAYOUT & CONTAINER */
 .main {
   flex: 0.75;
 }
 .layout-padding {
   padding: 10px;
 }
-.loader {
-  height: 81vh;
+.footer {
+  background: var(--crypto-bg);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
   align-items: center;
 }
-.footer a{
-  color: white!important;
+.footer a {
+  color: white !important;
 }
 @media screen and (max-width: 800px) {
   .app {
     flex-direction: column;
     overflow: hidden;
   }
-
   .navbar {
     flex: 1;
   }
-
   .main {
     flex: 1;
     margin-top: 90px;
     margin-left: 0px;
     margin-right: 10px;
   }
-
   .nav-container {
     height: 5vh;
     position: fixed;
@@ -122,13 +130,15 @@ a:hover {
     background: var(--crypto-bg);
   }
   .menu-control-container {
-    display: block !important;
+    display: flex !important;
+    width: 90%;
+    justify-content: end;
+    align-content: center;
   }
-
   .ant-menu-bg {
     position: absolute;
     right: 0px;
-    background: var(--crypto-bg)!important;
+    background: var(--crypto-bg) !important;
   }
   .home-title {
     font-size: 1.4rem !important;
@@ -136,8 +146,12 @@ a:hover {
   .show-more {
     font-size: 1.3rem !important;
   }
+  .mobile-bg {
+    background: #fff !important;
+  }
 }
-
+/*=============================================*/
+/*COIN DETAIL*/
 .coin-detail-container {
   margin: 30px;
 }
@@ -163,27 +177,25 @@ a:hover {
   opacity: 0.9;
   margin-bottom: 20px;
 }
-
+/*=============================================*/
+/*STATS*/
 .stats-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
-
 .stats-container h2 {
   font-weight: 700;
   font-size: 1.4rem;
   margin-top: 20px;
   color: var(--pink);
 }
-
 .coin-details-heading {
   font-weight: 700 !important;
   margin-top: 20px !important;
   color: var(--pink) !important;
 }
-
 .coin-stats {
   display: flex;
   justify-content: space-between;
@@ -192,56 +204,45 @@ a:hover {
   opacity: 0.9;
   padding: 20px;
 }
-
 .coin-stats-name {
   display: flex;
   gap: 10px;
   font-size: 1rem;
 }
-
 .stats {
   font-weight: 800;
 }
-
 .coin-value-statistics-heading p {
   font-size: 1rem;
   opacity: 0.9;
 }
-
 .coin-desc-link {
   display: flex;
   gap: 40px;
   margin-top: 40px;
   padding-top: 20px;
 }
-
 .coin-desc-link h2 {
   font-weight: 700;
   color: var(--pink);
 }
-
 .coin-desc-link p {
   font-size: 1rem;
   opacity: 0.9;
 }
-
 .coin-desc-link a {
   color: var(--pink);
 }
-
 .coin-desc-link h3 {
   font-weight: 700;
 }
-
 .coin-desc {
   flex: 0.5;
 }
-
 .coin-links {
   padding: 0px 20px;
   flex: 0.5;
 }
-
 .coin-link {
   display: flex;
   justify-content: space-between;
@@ -249,18 +250,15 @@ a:hover {
   border-bottom: 1px solid var(--border);
   padding: 20px;
 }
-
 .link-name {
   text-transform: capitalize;
   font-size: 1rem;
 }
-
 .coin-link a {
   color: var(--pink);
   font-weight: 700;
   font-size: 1rem;
 }
-
 .coin-link:hover,
 .coin-stats:hover {
   background-color: var(--bgSecondary);
@@ -291,7 +289,8 @@ a:hover {
     margin-top: 20px;
   }
 }
-
+/*=============================================*/
+/*NEWS PAGE RELATED*/
 .select-news {
   width: 180px;
 }
@@ -305,7 +304,6 @@ a:hover {
 .news-title {
   width: 70%;
 }
-
 .news-image-container .img {
   width: 100px;
   height: 100px;
@@ -321,7 +319,6 @@ a:hover {
 .provider-name {
   margin-left: 10px;
 }
-
 .chart-header {
   display: flex;
   justify-content: space-between;
@@ -372,12 +369,4 @@ a:hover {
 .select-timeperiod {
   width: 200px !important;
   margin-top: 20px !important;
-}
-
-.footer {
-  background: var(--crypto-bg);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
 }
